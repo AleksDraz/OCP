@@ -1,8 +1,5 @@
 package com.draznin.ocp.chapter1.equalsandhashcode;
 
-import com.draznin.ocp.chapter1.instanceofoperator.Child;
-import com.draznin.ocp.chapter1.instanceofoperator.Parent;
-
 /**
  * Some info about equals and hashcode:
  * - equals and hashcode should dependent on same subset of fields
