@@ -17,7 +17,7 @@ public class Container {
 
     public void testAnonymousInnerClass() {
         Anonymous anonymous = new Anonymous() {
-            
+
             @Override
             public void print() {
                 System.out.println("I'm anonymous");
@@ -26,6 +26,8 @@ public class Container {
     }
 
     public void testLocalInnerClass() {
+        int outOfLocalClassVariable = 1;
+        outOfLocalClassVariable++;
         class LocalInnerClass { //Scope of visibility only method of declaration
             private final String localInnerClassInstanceVariable = "local Inner Class Instance Variable";
 
@@ -38,6 +40,10 @@ public class Container {
 
             public void printStaticVariable() {
                 System.out.println(Container.staticVariable); // has access to private static variable
+            }
+
+            public void printLocalVariable() {
+             //   System.out.println(outOfLocalClassVariable); // variable out of class should be final or effectively final
             }
         }
 
