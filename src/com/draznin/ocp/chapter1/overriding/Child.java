@@ -32,7 +32,7 @@ public class Child extends Parent implements Human {
 
    // public static void testOverrideDefaultInInterface() { }// Static method can't override default method from interface and there is compile error
 
-   // public static void testOverrideDefaultInClass() { } // Static method can't override default method from super class and there is compile error
+   // public static void testOverrideDefaultInClass() { } // Static method can't override method from super class and there is compile error
 
    //  public void testOverrideStaticInClass() { } // Instance method can't override static method from super class and there is
     //  compile error. It is difference between overriding in interface and super class!
