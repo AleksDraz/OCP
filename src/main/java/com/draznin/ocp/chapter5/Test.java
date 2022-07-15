@@ -47,9 +47,5 @@ public class Test {
 
         ResourceBundle resourceBundle1 = ResourceBundle.getBundle("com.draznin.ocp.chapter5.CustomBundle", new Locale("de"));
         System.out.println(resourceBundle1.getString("hello"));
-
-
-
-
     }
 }
